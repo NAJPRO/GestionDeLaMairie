@@ -1,0 +1,234 @@
+/* Debut style global */
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+a{
+    text-decoration: none;
+}
+input{
+    outline: none;
+}
+/* Fin style global */
+
+/* Debut style Container qui contient toute la page */
+.container{
+    background-color: #fff;
+    display: flex;
+}
+
+/* Fin du container */
+
+/* Debut du conatainer-left */
+.contain-left{
+    position: fixed;
+    width: 210px;
+    background-color: #eeeeee8f;
+    box-shadow: 0 0 12px #33333332;
+    height: 100vh;
+}
+
+.contain-left>.logo-site{
+    padding: 30px;
+
+}
+.contain-left>.logo-site>p{
+    font-weight: bold;
+    animation: animate 120s linear infinite;
+}
+.contain-left>.logo-site>p span:nth-child(1){
+    animation-delay: 0s;
+}
+.contain-left>.logo-site>p span:nth-child(2){
+    animation-delay: 0.1s;
+}
+.contain-left>.logo-site>p span:nth-child(3){
+    animation-delay: 0.2s;
+}
+.contain-left>.logo-site>p span:nth-child(4){
+    animation-delay: 0.3s;
+}
+.contain-left>.logo-site>p span:nth-child(5){
+    animation-delay: 0.4s;
+}
+.contain-left>.logo-site>p span:nth-child(6){
+    animation-delay: 0.5s;
+}
+.contain-left>.logo-site>p span:nth-child(7){
+    animation-delay: 0.6s;
+}
+.contain-left>.logo-site>p span:nth-child(8){
+    animation-delay: 0.7s;
+}
+@keyframes animate{
+    0%{
+        color: rgb(255, 119, 0);
+    }
+    33.3%{
+        color: #f00;
+    }
+    66.6%{
+        color: rgb(0, 255, 145);
+    }
+    100%{
+        color: #00f;
+    }
+}   
+
+.contain-left>.logo-site>p::first-letter{
+    font-size: 25px;
+    color: rgb(255, 119, 0);
+}
+
+
+
+
+
+
+.contain-left>.menu-left, .menu-bar-bottom{
+    margin-left: 20px;
+}
+
+.contain-left>.menu-bar-horizontal{
+    border: 1px solid #969696;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.line-menu-left{
+    padding: 5px;
+    width: 130px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    box-shadow: 2px 1px 3px #33333332;
+    text-align: center;
+}
+.line-menu-left:hover{
+    box-shadow: inset 1px 1px 4px#33333338;
+}
+.line-menu-left p, a{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+#active{
+    background-color: greenyellow;
+}
+.menu-bottom-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-bottom-image img{
+    width: 75%;
+}
+/* Fin du container-left */
+
+/* Debut du style du container rigth */
+.contain-rigth{
+    width: calc(100% - 250px);
+    height: 200px;
+    position: absolute;
+    left: 220px;
+
+}
+
+.contain-rigth .navigate-bar-menu-right>.profil-user>p>img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.contain-rigth>.navigate-bar-menu{
+    padding: 25px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contain-rigth .navigate-bar-menu-right>.profil-user{
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.navigate-bar-menu-left{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.navigate-bar-menu-left input{
+    margin-left: 30px;
+}
+/* Fin du style du container rigth */
+
+/* Debut gestion de la tool section */
+.tools-sections{
+    margin-top: 20px;
+    margin: 0 13px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 16px;
+    grid-row-gap: 30px;
+   
+
+}
+.prototype-diviser, .prototype{
+
+    height: 500px;
+}
+.prototype{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 1px rgb(0, 0, 0, 0.125);
+}
+.prototype .sous-proto-line1{
+    padding-left: 20px;
+    margin-top: 25px;
+    font-size: 20px;
+    margin-bottom: 30px;
+
+}
+.prototype .sous-proto-line2{
+    padding-left: 20px;
+    font-size: 50px;
+
+}
+.prototype .sous-proto-line3{
+    padding-left: 20px;
+    margin-top: 270px;
+
+}
+.prototype-diviser{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    grid-column-gap: 12px;
+    grid-row-gap: 15px;
+
+}
+.prototype-diviser .sous-prototype{
+    background-color: #fff;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.225);
+    /* box-shadow: 2px 2px 1px rgb(0, 0, 0, 0.125); */
+}
+.prototype-diviser .sous-prototype .sous-proto-line1{
+    margin-top: 25px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+
+}
+.prototype-diviser .sous-prototype .sous-proto-line2{
+    font-size: 50px;
+    padding-left: 20px;
+}
+.prototype-diviser .sous-prototype .sous-proto-line3{
+    margin-top: 70px;
+    padding-left: 20px;
+}
+.up{
+    color: greenyellow;
+}
+.down{
+    color: red;
+}
+/* Fin gestion de la tool section */
