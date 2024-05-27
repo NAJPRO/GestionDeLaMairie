@@ -16,7 +16,7 @@ input{
 /* Debut style Container qui contient toute la page */
 .container{
     background-color: #fff;
-    display: flex;
+    /* display: flex; */
 }
 
 /* Fin du container */
@@ -231,4 +231,44 @@ input{
 .down{
     color: red;
 }
+
+.navigate-bar-menu-down{
+    display: none;
+    margin-left: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-column-gap: 8px;
+    /* grid-row-gap: 0; */
+}
 /* Fin gestion de la tool section */
+
+/* Gestion du responsive pour les écrans de dimention inférieur à 720px */
+@media screen and (max-width: 720px) {
+    /* .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contain-left{
+        position: relative;
+        width: auto;
+        height: auto;
+        margin-bottom: 200px;
+    } */
+    .navigate-bar-menu-down{
+        display: grid;
+    }
+    .contain-left{
+        /* position: relative; */
+        /* margin: 0;
+        padding: 0; */
+        display: none;
+
+    }
+    .contain-rigth{
+        width: 100%;
+        position: relative;
+        right: 0;
+        left: 0;
+    }
+}
+

@@ -1,0 +1,55 @@
+body{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.a{
+    display: flex;
+}
+h1{
+    margin-bottom: 5%;
+}
+h2 , h1, h3{
+    color: rgb(3, 78, 15);
+    text-decoration: underline;
+}
+
+.row{
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.input{
+    display: none;
+}
+.cols{
+    margin-bottom: 5%;
+    border-left: 2px solid rgb(3, 78, 15);
+}
+
+form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+input{
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background-color: rgb(155, 231, 187);
+    width: 10%;
+    margin-right: 5%;
+    padding: 2%;
+    border-radius: 40%;
+}
+
+input:hover{
+    background-color: aqua;
+}
+
+p{
+    margin-right: 2%;
+}
+
